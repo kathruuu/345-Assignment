@@ -1,0 +1,205 @@
+.img-wrapper-header {
+  height:13rem;
+  background: url("../photos/athens.jpg");
+  background-position: 50% 50%;
+  background-size:cover;
+  top: 0;
+  width:100%;
+  z-index: 10;
+}
+div{
+
+    font-family:Helvetica !important;
+
+}
+
+.content {
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+}
+.breadcrumbs {
+  position:relative;
+  padding-left: 10px;
+  font: Roboto Slab;
+}
+.nav-bottom-mrg {
+  margin-bottom:5px !important;
+}
+.body-margin{
+  margin-top: 30px !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+.left-side{
+  padding-left: 50px !important;
+}
+.right-side{
+  padding-right:50px !important;
+}
+.inst{
+  border-right: 1px solid grey;
+  border-left: 5px solid #000080;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+
+}
+
+.inst > h1{
+  /*margin-bottom: 1px !important;*/
+  padding:0px !important;
+}
+.inst > p{
+margin-bottom: 15px !important;
+font-size: 14px !important;
+
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 10px !important;
+  padding-left: 20px !important;
+  padding-bottom: 28px !important;
+}
+.active {
+  background-color: #e6e6e6 !important;
+}
+.search-size{
+  width: 300px !important;
+  position:relative;
+  float:left;
+  padding-right:8px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+style="float:left;
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+.img-size {
+  max-width: 500px;
+  max-height: 350px;
+  position: relative;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  margin-bottom: 10px;
+}
+.header {
+  margin-bottom: 0px !important;
+}
+
+.due-date {
+  color: grey;
+  font-style: italic;
+  margin-top:0px !important;
+  margin-bottom:10px !important;
+  border-bottom: 1px solid #eee;
+}
+.grey {
+  color: grey;
+  font-size: 2rem;
+  float: right;
+}
+.green {
+  color: green;
+  font-size: 2rem;
+  float:right;
+  border: 50px !important;
+}
+
+.panel-heading {
+  padding: 15px 15px !important;
+}
+
+.answer-form {
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          position: relative;
+          padding: 15px;
+  margin-left:100px;
+}
+
+.answers-section{
+  margin-left:100px;
+}
+.answer-footer{
+  margin-top: 10px;
+
+}
+.comments-section {
+  margin-left: 150px;
+
+}
+.profile-size-comments {
+  max-width:50px;
+  max-height: 50px;
+}
+.reply{
+  max-height: 100px;
+}
+.separators{
+  height: 1px;
+  margin: 5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.next-btn {
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  float:right;
+  padding: 10px;
+}
+
+.prev-btn {
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  float:left;
+  padding: 10px;
+}
+.q-btn {
+  padding-top:100px;
+  padding-bottom:5px;
+}
+
+.profile-size{
+  max-width:80px;
+  max-height: 80px;
+}
+textarea.form-control {
+  float: right;
+  max-height: 200px !important;
+}
+
+#sidebar{
+  align-items: center;
+  max-width: 350px;
+}
+/*.header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 3px inset #eee;
+  border-right: 3px inset #eee;
+}*/
+
+#reply-submit{
+  padding: 4px 4px;
+}
+
+.submitButton{
+  background-color: #234d7a;
+  color: #fff;
+  float:right !important;
+}
