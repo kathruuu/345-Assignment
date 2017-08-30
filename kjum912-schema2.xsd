@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BookList" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+      <xs:simpleType name="authorName">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[A-Z a-z']+"/>
+        </xs:restriction>
+      </xs:simpleType>
+
+      <xs:simpleType name="ID">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[a-z][a-z][a-z]?[0-9][0-9][0-9]"/>
+        </xs:restriction>
+      </xs:simpleType>
+
+      <xs:element name="ArrayOfBook">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Book" minOccurs="0" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Author" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Initials" type="authorName" />
+                        <xs:element name="Surname" type="authorName" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="Title" type="xs:string" />
+                </xs:sequence>
+                <xs:attribute name="id" type="ID" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    </xs:schema>
