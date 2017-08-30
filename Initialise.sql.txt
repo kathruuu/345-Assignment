@@ -1,0 +1,33 @@
+CREATE TABLE Ambulance(
+ambulance_ID CHAR( 4 ) PRIMARY KEY,
+station VARCHAR( 30 )
+)
+
+CREATE TABLE StaffMember (
+first_names VARCHAR(60),
+    surname VARCHAR(30),
+    officer_ID CHAR(6) NOT NULL PRIMARY KEY,
+    skill_level VARCHAR(15),
+    ambulance_ID CHAR(4),
+   	CONSTRAINT fk_StaffMember FOREIGN KEY (ambulance_ID) REFERENCES Ambulance(ambulance_ID)
+    )
+
+INSERT INTO StaffMember
+VALUES ("John", "Doe", 135790, "Basic", null);
+INSERT INTO StaffMember
+VALUES ("Peter", "Smith", 135970, "Basic", null);
+INSERT INTO StaffMember
+VALUES ("Jane", "Doe", 131234, "Intermediate", null);
+INSERT INTO StaffMember
+VALUES ("Bill", "Bobbins", 133535, "Intermediate", null);
+INSERT INTO StaffMember
+VALUES ("Carol", "Green", 130001, "Advanced", null);
+INSERT INTO StaffMember
+VALUES ("Jill", "Shield", 132244, "Basic", null);
+
+INSERT INTO Ambulance 
+VALUES ("A7", "Greenfields");
+INSERT INTO Ambulance
+VALUES ("A42", "Bluelane");
+INSERT INTO Ambulance 
+VALUES ("A110", "Redville");
